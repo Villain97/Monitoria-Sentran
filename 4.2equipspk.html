@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoria Sentran</title>
+    <link rel="stylesheet" href="0-style.css">
+</head>
+<body>
+    <!-- Inclui o arquivo JavaScript que cria a estrutura base -->
+    <script src="0-main.js"></script>
+
+    <!-- Script para adicionar o conteúdo extra dentro da tag <main> -->
+    <script>
+        window.onload = function() {
+            var mainElement = document.querySelector('main'); // Seleciona o elemento <main>
+            if (mainElement) { // Verifica se o <main> existe
+                mainElement.innerHTML += `
+                    <h1 class="titulo">Contratos</h1>
+                    <h2 class="info">Para acessar os equipamentos Perkons é necessário VPN</h2>
+            
+                    <a class="botao"href="4.3gv.html">Governador Valadares</a>
+                    <a class="botao"href="4.4jac.html">Jacareí</a>
+                    <a class="botao"href="4.5sbo.html">Santa Barbara Do Oeste</a>
+                    <a class="botao"href="4.6ss.html">São Sebastião</a>
+                `;
+            }
+        };
+    </script>
+</body>
+</html>
+
+            
+

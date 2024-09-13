@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoria Sentran</title>
+    <link rel="stylesheet" href="0-style.css">
+</head>
+<body>
+    <!-- Inclui o arquivo JavaScript que cria a estrutura base -->
+    <script src="0-main.js"></script>
+
+    <!-- Script para adicionar o conteúdo extra dentro da tag <main> -->
+    <script>
+        window.onload = function() {
+            var mainElement = document.querySelector('main'); // Seleciona o elemento <main>
+            if (mainElement) { // Verifica se o <main> existe
+                mainElement.innerHTML += `
+                    <h1 class="titulo">Cubatão</h1>
+            <h2 class="info">Cliente: 0637101</h2>
+            <h2 class="info">Porta: 306</h2>
+            <h2 class="info">Servidor: 10.1.0.5</h2>  
+            <h2 class="info">IP Servidor(Aplicação): 10.20.90.1</h2>
+ 
+            <a class="botao__equipamento"href="HTTP://138.94.69.5:8989"target="_blank">1352</a>
+            <a class="botao__equipamento"href="HTTP://138.94.69.30:8989"target="_blank">1353</a>
+            <a class="botao__equipamento"href="HTTP://138.94.69.29:8989"target="_blank">1354</a>
+            <a class="botao__equipamento"href="HTTP://138.94.69.28:8989"target="_blank">1355</a>
+            <a class="botao__equipamento"href="HTTP://138.94.69.6:8989"target="_blank">1356</a>
+            <a class="botao__equipamento"href="HTTP://138.94.69.7:8989"target="_blank">1361</a>
+            <a class="botao__equipamento"href="HTTP://138.94.69.19:8989"target="_blank">1362</a>
+            <a class="botao__equipamento"href="HTTP://138.94.69.36:8989"target="_blank">1363</a>
+ 
+                `;
+            }
+        };
+    </script>
+</body>
+</html>
+
+            
+ 

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoria Sentran</title>
+    <link rel="stylesheet" href="0-style.css">
+</head>
+<body>
+    <!-- Inclui o arquivo JavaScript que cria a estrutura base -->
+    <script src="0-main.js"></script>
+
+    <!-- Script para adicionar o conteúdo extra dentro da tag <main> -->
+    <script>
+        window.onload = function() {
+            var mainElement = document.querySelector('main'); // Seleciona o elemento <main>
+            if (mainElement) { // Verifica se o <main> existe
+                mainElement.innerHTML += `
+                    <h1 class="titulo">Itapecerica</h1>
+            <h2 class="info">Cliente: 0654501</h2>
+            <h2 class="info">Porta: </h2>
+            <h2 class="info">Servidor: 10.1.0.5</h2>  
+            <h2 class="info">IP Servidor(Aplicação): </h2>
+
+                <a class="botao__equipamento"href="HTTP://10.20.140.26:8989"target="_blank">998</a>
+                <a class="botao__equipamento"href="HTTP://10.20.140.66:8989"target="_blank">1064</a>
+                <a class="botao__equipamento"href="HTTP://10.20.140.134:8989"target="_blank">1065</a>
+                <a class="botao__equipamento"href="HTTP://10.20.140.54:8989"target="_blank">1066</a>
+                <a class="botao__equipamento"href="HTTP://10.20.140.62:8989"target="_blank">1067</a>
+                <a class="botao__equipamento"href="HTTP://10.20.140.70:8989"target="_blank">1068</a>
+                <a class="botao__equipamento"href="HTTP://10.20.140.50:8989"target="_blank">1069</a>
+                <a class="botao__equipamento"href="HTTP://10.20.140.74:8989"target="_blank">1070</a>
+                <a class="botao__equipamento"href="HTTP://10.20.140.98:8989"target="_blank">1071</a>
+                <a class="botao__equipamento"href="HTTP://10.20.140.86:8989"target="_blank">1072</a>
+                <a class="botao__equipamento"href="HTTP://10.20.140.58:8989"target="_blank">1073</a>
+                `;
+            }
+        };
+    </script>
+</body>
+</html>
+            
+                

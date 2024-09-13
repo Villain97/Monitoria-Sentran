@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoria Sentran</title>
+    <link rel="stylesheet" href="0-style.css">
+</head>
+<body>
+    <!-- Inclui o arquivo JavaScript que cria a estrutura base -->
+    <script src="0-main.js"></script>
+
+    <!-- Script para adicionar o conteúdo extra dentro da tag <main> -->
+    <script>
+        window.onload = function() {
+            var mainElement = document.querySelector('main'); // Seleciona o elemento <main>
+            if (mainElement) { // Verifica se o <main> existe
+                mainElement.innerHTML += `
+                    <h1 class="comando-titulo">Lista de comandos (putty)</h1>
+                    <h2 class="comando-subtitulo">Senha acesso RTM: RTM@5pl1c3</h2>
+                    <h2 class="comando-subtitulo">Senha dos comandos script CMD: MF515pl1c3@</h2>
+                    <h2 class="comando-subtitulo">Comandos para instalação da VPN:</h2>
+                    <h3 class="comando-info">chmod 755 radar_vpn_conf.sh</h3>
+                    <h3 class="comando-info">./radar_vpn_conf.sh</h3>
+                    <h2 class="comando-subtitulo">Atualização N/MET</h2>
+                    <h3 class="comando-info">sudo apt update> Verifica atualizações pendentes</h3>
+                    <h3 class="comando-info">sudo apt install splice-radar > Baixa e atualiza para versão mais recente</h3>
+                    <h2 class="comando-subtitulo">Reiniciar módulos:</h2>
+                    <h3 class="comando-info">sudo /radar/util/reset_met_module_by_CANBUS.sh</h3>
+                    <h2 class="comando-subtitulo">Verificar ping do met:</h2>
+                    <h3 class="comando-info">ping met-raw</h3>
+                    <h2 class="comando-subtitulo">Zerar status semafórico do radar:</h2>
+                    <h3 class="comando-info">echo t01231E5AA5 devttyS2 (Após o comando é necessário realizar o reset dos módulos via cambus)</h3>
+                    <h2 class="comando-subtitulo">Verificar módulos ativos: </h2>
+                    <h3 class="comando-info">sudo splice-util-can-linux-terminal</h3>
+                    <h3 class="comando-info">0 é MET </h3>
+                    <h3 class="comando-info">1 é NMT</h3>
+                    <h3 class="comando-info">4 é MCA</h3>
+                    <h3 class="comando-info">5 é UPC MET </h3>
+                    <h3 class="comando-info">6 é UPC NMET</h3>
+                    <h2 class="comando-subtitulo">Verificar status do MET:</h2>
+                    <h3 class="comando-info">tail -f /var/log/met-raw.log </h3>
+                    <h2 class="comando-subtitulo">Outros comandos Radar :</h2>
+                    <h3 class="comando-info">sudo service splice-radar check</h3>
+                    <h3 class="comando-info">sudo service splice-radar stop/start</h3>
+                    <h3 class="comando-info">sudo service splice-radar status </h3>
+                    <h2 class="comando-subtitulo">Reinstalar todo pacote visual:</h2>
+                    <h3 class="comando-info">sudo dpkg --configure -a</h3>
+                    <h3 class="comando-info">sudo apt -f install</h3>
+                    <h3 class="comando-info">sudo apt remove --purge docker*</h3>
+                    <h3 class="comando-info">sudo apt clean && sudo apt autoclean</h3>
+                    <h3 class="comando-info">sudo apt update</h3>
+                    <h3 class="comando-info">sudo apt install docker.io docker-compose</h3>
+                    <h2 class="comando-subtitulo">Reinstalar interface:</h2>
+                    <h3 class="comando-info">sudo /radar/util/watchdog_disable.sh</h3>
+                    <h3 class="comando-info">sudo service splice-radar stop </h3>
+                    <h3 class="comando-info">cd /radar/util/</h3>
+                    <h3 class="comando-info">sudo ./cpu2netconf.sh install-interfaces</h3>
+                    <h3 class="comando-info">sudo ./cpu2netconf.sh restart-all-interfacescd /</h3>
+                    <h2 class="comando-subtitulo">Para verificar a versão do OCR:</h2>
+                    <h3 class="comando-info">sudo docker images a versão mais atual até o momento é a 1.1.0</h3>
+                    <h2 class="comando-subtitulo">Instalação de OCR:</h2>
+                    <h3 class="comando-info">sudo dpkg --configure -a</h3>
+                    <h3 class="comando-info">sudo apt -f install</h3>
+                    <h3 class="comando-info">sudo apt remove --purge docker*</h3>
+                    <h3 class="comando-info">sudo apt clean && sudo apt autoclean</h3>
+                    <h3 class="comando-info">sudo apt update</h3>
+                    <h3 class="comando-info">sudo apt install docker.io docker-compose</h3>
+                    <h3 class="comando-info">sudo apt install splice-lpr</h3>
+                    <h2 class="comando-subtitulo">OCR Direto do equipamento: </h2>
+                    <h3 class="comando-info">Realizar download dos arquivos LPR e VisaoComputacional, envia para o equipamento via Winscp</h3>
+                    <h3 class="comando-info">sudo dpkg --configure -a</h3>
+                    <h3 class="comando-info">sudo apt -f install</h3>
+                    <h3 class="comando-info">sudo apt remove --purge docker*</h3>
+                    <h3 class="comando-info">sudo apt autoremove</h3>
+                    <h3 class="comando-info">sudo apt clean && sudo apt autoclean</h3>
+                    <h3 class="comando-info">sudo apt update</h3>
+                    <h3 class="comando-info">sudo apt install docker.io docker-compose</h3>
+                    <h3 class="comando-info">Senha CMD</h3>
+                    <h3 class="comando-info">sudo dpkg -i splice-visao-computacional-1.1.14.20-707934467.deb</h3>
+                    <h3 class="comando-info">sudo dpkg -i splice-lpr-1.1.14.20-707934467.deb</h3>
+                `;
+            }
+        };
+    </script>
+</body>
+</html>
+            
+
+
+                    

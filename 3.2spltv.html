@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoria Sentran</title>
+    <link rel="stylesheet" href="0-style.css">
+</head>
+<body>
+    <!-- Inclui o arquivo JavaScript que cria a estrutura base -->
+    <script src="0-main.js"></script>
+
+    <!-- Script para adicionar o conteúdo extra dentro da tag <main> -->
+    <script>
+        window.onload = function() {
+            var mainElement = document.querySelector('main'); // Seleciona o elemento <main>
+            if (mainElement) { // Verifica se o <main> existe
+                mainElement.innerHTML += `
+                    <h1 class="titulo">SPLTVs</h1>
+                    <h2 class="info">Cadastros equipamentos/usuarios</h2>
+            <a class="botao"href="http://spl-amparo-snt-6gywz.brazilsouth.cloudapp.azure.com:256/splmtv/Default.aspx?e=mSCTV9RbihDO3o1qYkoEiQ%3d%3d&r=http%3a%2f%2fspl-amparo-snt-6gywz.brazilsouth.cloudapp.azure.com%3a256%2fsplmtvclient%2frelatorios%2fEstatistico.aspx%3fmenuid%3d200" target="_blank">Amparo</a>
+            <a class="botao"href="http://spl-aruja-snt-6gz4c.brazilsouth.cloudapp.azure.com:249/splmtv/Default.aspx?e=mSCTV9RbihDO3o1qYkoEiQ%3d%3d&r=http%3a%2f%2fspl-aruja-snt-6gz4c.brazilsouth.cloudapp.azure.com%3a249%2fsplmtvclient%2fCadastro%2fUsuario.aspx%3fmenuid%3d2" target="_blank">Arujá</a>
+            <a class="botao"href="http://spl-cajamar-snt-6gyej.brazilsouth.cloudapp.azure.com:253/splmtv/Default.aspx?e=mSCTV9RbihDO3o1qYkoEiQ%3d%3d&r=http%3a%2f%2fspl-cajamar-snt-6gyej.brazilsouth.cloudapp.azure.com%3a253%2fsplmtvclient%2frelatorios%2fEstatistico.aspx%3fmenuid%3d200" target="_blank">Cajamar</a>
+            <a class="botao"href="http://spl-cordeiropolis-snt-6un20.brazilsouth.cloudapp.azure.com:262/splmtv/Default.aspx?e=mSCTV9RbihDO3o1qYkoEiQ%3d%3d&r=http%3a%2f%2fspl-cordeiropolis-snt-6un20.brazilsouth.cloudapp.azure.com%3a262%2fsplmtvclient%2frelatorios%2fEstatistico.aspx%3fmenuid%3d200" target="_blank">Cordeiropolis</a>
+            <a class="botao"href="http://spl-dct-snt.brazilsouth.cloudapp.azure.com:312/splmtv/Default.aspx?e=mSCTV9RbihDO3o1qYkoEiQ%3d%3d&r=http%3a%2f%2fspl-dct-snt.brazilsouth.cloudapp.azure.com%3a312%2fsplmtvclient%2fHome.aspx" target="_blank">Contratos DCT</a>
+            <a class="botao"href="http://spl-diadema-snt-6gyc4.brazilsouth.cloudapp.azure.com:283/splmtv/Default.aspx?e=mSCTV9RbihDO3o1qYkoEiQ%3d%3d&r=http%3a%2f%2fspl-diadema-snt-6gyc4.brazilsouth.cloudapp.azure.com%3a283%2fsplmtvclient%2frelatorios%2fEstatistico.aspx%3fmenuid%3d200" target="_blank">Diadema</a>
+            <a class="botao"href="http://spl-embu-snt-6gy9m.brazilsouth.cloudapp.azure.com:276/splmtv/Default.aspx?e=mSCTV9RbihDO3o1qYkoEiQ%3d%3d&r=http%3a%2f%2fspl-embu-snt-6gy9m.brazilsouth.cloudapp.azure.com%3a276%2fsplmtvclient%2fCadastro%2fConfRemota.aspx%3fmenuid%3d114" target="_blank">Embu</a>
+            <a class="botao"href="http://spl-itapecerica-snt-6gy8v.brazilsouth.cloudapp.azure.com:287/splmtv/Default.aspx?e=mSCTV9RbihDO3o1qYkoEiQ%3d%3d&r=http%3a%2f%2fspl-itapecerica-snt-6gy8v.brazilsouth.cloudapp.azure.com%3a287%2fsplmtvclient%2frelatorios%2fEstatistico.aspx%3fmenuid%3d200" target="_blank">Itapecerica</a>
+            <a class="botao"href="http://spl-jaguariuna-snt.brazilsouth.cloudapp.azure.com:327/splmtv/Default.aspx" target="_blank">Jaguariuna</a>
+            <a class="botao"href="http://spl-limeira-snt-6gyr9.brazilsouth.cloudapp.azure.com:239/splmtv/Default.aspx?e=mSCTV9RbihDO3o1qYkoEiQ%3d%3d&r=http%3a%2f%2fspl-limeira-snt-6gyr9.brazilsouth.cloudapp.azure.com%3a239%2fsplmtvclient%2frelatorios%2fEstatistico.aspx%3fmenuid%3d200" target="_blank">Limeira</a>
+            <a class="botao"href="http://spl-santaisabel-snt-6gz57.brazilsouth.cloudapp.azure.com:281/splmtv/Default.aspx?e=mSCTV9RbihDO3o1qYkoEiQ%3d%3d&r=http%3a%2f%2fspl-santaisabel-snt-6gz57.brazilsouth.cloudapp.azure.com%3a281%2fsplmtvclient%2frelatorios%2fEstatistico.aspx%3fmenuid%3d200" target="_blank">Santa Isabel</a>
+            <a class="botao"href="http://spl-stoantoniopinhal-snt-6gzw0.brazilsouth.cloudapp.azure.com:271/splmtv/Default.aspx?e=mSCTV9RbihDO3o1qYkoEiQ%3d%3d&r=http%3a%2f%2fspl-stoantoniopinhal-snt-6gzw0.brazilsouth.cloudapp.azure.com%3a271%2fsplmtvclient%2frelatorios%2fEstatistico.aspx%3fmenuid%3d200" target="_blank">Santo Antônio Do Pinhal</a>
+            <a class="botao"href="http://spl-praiagrande-snt-6gwzm.brazilsouth.cloudapp.azure.com:301/splmtv/Default.aspx" target="_blank">Praia Grande</a>
+            <a class="botao"href="http://spl-valinhos-snt-6gyt30.brazilsouth.cloudapp.azure.com:295/splmtv/Default.aspx?e=mSCTV9RbihDO3o1qYkoEiQ%3d%3d&r=http%3a%2f%2fspl-valinhos-snt-6gyt30.brazilsouth.cloudapp.azure.com%3a295%2fsplmtvclient%2fhome.aspx" target="_blank">Valinhos</a>
+            <a class="botao"href="http://spl-vinhedo-snt-6gyt4.brazilsouth.cloudapp.azure.com:243/splmtv/Default.aspx?e=mSCTV9RbihDO3o1qYkoEiQ%3d%3d&r=http%3a%2f%2fspl-vinhedo-snt-6gyt4.brazilsouth.cloudapp.azure.com%3a243%2fsplmtvclient%2frelatorios%2fEstatistico.aspx%3fmenuid%3d200" target="_blank">Vinhedo</a>
+                `;
+            }
+        };
+    </script>
+</body>
+</html>
+
+            

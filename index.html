@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoria Sentran</title>
+    <link rel="stylesheet" href="0-style.css">
+</head>
+<body>
+    <!-- Inclui o arquivo JavaScript que cria a estrutura base -->
+    <script src="0-main.js"></script>
+
+    <!-- Script para adicionar o conteúdo extra dentro da tag <main> -->
+    <script>
+        window.onload = function() {
+            var mainElement = document.querySelector('main'); // Seleciona o elemento <main>
+            if (mainElement) { // Verifica se o <main> existe
+                mainElement.innerHTML += `
+                    <h1 class="titulo">Menu principal </h1>
+                    <a class="botao" href="https://app.checkmob.com/Account/Login" target="_blank">Checkmob</a>
+                    <a class="botao" href="http://sentranservicos175428.protheus.cloudtotvs.com.br:4020/meurh01/#/login" target="_blank">Meu RH</a>
+                    <a class="botao" href="https://psie.inmetro.gov.br/Default.aspx" target="_blank">PSIE</a>
+                    <a class="botao" href="https://gmitapecerica.cconet.com.br/login" target="_blank">CCO.net</a>
+                    <a class="botao" href="http://i9ia.io:3343/login" target="_blank">PMV</a>
+                    <a class="botao" href="https://painel.cobli.co/home" target="_blank">Cobli</a>
+                `;
+            }
+        };
+    </script>
+</body>
+</html>

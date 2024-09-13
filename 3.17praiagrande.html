@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoria Sentran</title>
+    <link rel="stylesheet" href="0-style.css">
+</head>
+<body>
+    <!-- Inclui o arquivo JavaScript que cria a estrutura base -->
+    <script src="0-main.js"></script>
+
+    <!-- Script para adicionar o conteúdo extra dentro da tag <main> -->
+    <script>
+        window.onload = function() {
+            var mainElement = document.querySelector('main'); // Seleciona o elemento <main>
+            if (mainElement) { // Verifica se o <main> existe
+                mainElement.innerHTML += `
+                    <h1 class="titulo">Praia Grande</h1>
+            <h2 class="info">Cliente: 0692101</h2>
+            <h2 class="info">Porta: </h2>
+            <h2 class="info">Servidor: 10.1.0.5 </h2>  
+            <h2 class="info">IP Servidor(Aplicação): </h2>
+
+                <a class="botao__equipamento"href="HTTP://10.20.160.86:8989"target="_blank">1388</a>
+                <a class="botao__equipamento"href="HTTP://10.20.160.58:8989"target="_blank">1389</a>
+                <a class="botao__equipamento"href="HTTP://187.119.238.81:8989"target="_blank">1390</a>
+                <a class="botao__equipamento"href="HTTP://10.20.160.82:8989"target="_blank">1391</a>
+                <a class="botao__equipamento"href="HTTP://10.20.160.46:8989"target="_blank">1392</a>
+                <a class="botao__equipamento"href="HTTP://10.20.160.90:8989"target="_blank">1393</a>
+                <a class="botao__equipamento"href="HTTP://10.20.160.62:8989"target="_blank">1394</a>
+                <a class="botao__equipamento"href="HTTP://10.20.160.50:8989"target="_blank">1395</a>
+                <a class="botao__equipamento"href="HTTP://10.20.160.74:8989"target="_blank">1396</a>
+                <a class="botao__equipamento"href="HTTP://10.20.160.78:8989"target="_blank">1397</a>
+                `;
+            }
+        };
+    </script>
+</body>
+</html>
+            
